@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flexSpBeCen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainLayout {
+    width: 1000px;
+    height: 500px;
+
+    margin: 50px auto;
+    margin-top: 0;
+    /* padding-top: 1px; */
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background-color: aqua;
+}
+
+.mem {
+    width: 900px;
+    height: 350px;
+
+    margin: 0px auto;
+    margin-top: 19px;
+
+    border-radius: 10px;
+    background-color: violet;
+}
+
+.bottomPanel {
+    width: 900px;
+    margin: 0 auto;
+
+    background-color: cadetblue;
+}
+
+
+.textMem {}
+
+.nav{
+    width: 100px;
+    height: 10px;
+
+    background-color: brown;
+}
