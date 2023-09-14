@@ -39,6 +39,10 @@
 
     border-radius: 10px;
     background-color: blueviolet;
+
+    display: flex;
+    position: relative;
+    /* right: var(--widthCom); */
 }
 
 .bottomPanel {
@@ -78,4 +82,18 @@
     border: 2px solid white;
     background-color: white;
     cursor: pointer;
+}
+
+.memStl {
+    width: var(--widthCom);
+    height: 322px;
+    border-radius: 10px;
+
+}
+
+.contMem {
+    width: var(--widthCom);
+    height: 322px;
+    display: flex;
+    align-items: center;
 }
