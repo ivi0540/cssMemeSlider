@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+:root {
+    --main-color: black;
+    --widthCom: 699px;
+    --heightbottomPanel: 15px;
+}
+
 .flexSpBeCen {
     display: flex;
     justify-content: space-between;
@@ -11,43 +17,65 @@
 }
 
 .mainLayout {
-    width: 1000px;
-    height: 500px;
+    width: 736px;
+    height: 432px;
 
     margin: 50px auto;
     margin-top: 0;
-    /* padding-top: 1px; */
-    padding: 20px;
+    padding-top: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
 
-    border-radius: 10px;
+    /* border-radius: 10px; */
 
-    background-color: aqua;
+    background-color: var(--main-color);
 }
 
-.mem {
-    width: 900px;
-    height: 350px;
+.slider {
+    width: var(--widthCom);
+    height: 322px;
 
     margin: 0px auto;
-    margin-top: 19px;
 
     border-radius: 10px;
-    background-color: violet;
+    background-color: blueviolet;
 }
 
 .bottomPanel {
-    width: 900px;
+    width: var(--widthCom);
+    height: var(--heightbottomPanel);
     margin: 0 auto;
+    margin-top: 23px;
+    padding: 0;
 
-    background-color: cadetblue;
+    background-color: var(--main-color);
 }
 
 
-.textMem {}
+.textMem {
+    color: white;
+}
 
-.nav{
-    width: 100px;
-    height: 10px;
+.nav {
+    width: 61px;
+    height: var(--heightbottomPanel);
 
-    background-color: brown;
+    background-color: var(--main-color);
+}
+
+.controller {
+    width: 12px;
+    height: 12px;
+
+    border: 2px solid blue;
+
+    background-color: var(--main-color);
+
+    border-radius: 10px;
+}
+
+.controller:hover {
+    border: 2px solid white;
+    background-color: white;
+    cursor: pointer;
 }
