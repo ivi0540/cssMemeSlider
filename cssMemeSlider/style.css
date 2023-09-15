@@ -42,6 +42,8 @@
 
     display: flex;
     position: relative;
+
+    transition: all ease 1s;
     /* right: var(--widthCom); */
 }
 
@@ -96,4 +98,9 @@
     height: 322px;
     display: flex;
     align-items: center;
+}
+
+
+.sliderContainet{
+    overflow: hidden;
 }
