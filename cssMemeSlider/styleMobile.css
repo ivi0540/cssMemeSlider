@@ -1,0 +1,26 @@
+@media (max-width: 1024px) {
+    :root {
+        /* picture sizes */
+        --widthCom: 284px;
+        --heihthCom: 130px;
+
+        /* mainLayout */
+        --widthMainLayout: 320px;
+        --heightMainLayout: 266px;
+
+        --heightbottomPanel: 44px;
+    }
+
+    .bottomPanel {
+        flex-direction: column-reverse;
+        margin-top: 18px;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sliderFrameText {
+        position: relative;
+        right: 80px;
+    }
+}

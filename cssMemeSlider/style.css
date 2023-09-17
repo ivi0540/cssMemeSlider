@@ -5,9 +5,21 @@
 }
 
 :root {
-    --main-color: black;
+    /* mainLayout */
+    --widthMainLayout: 736px;
+    --heightMainLayout: 432px;
+
+    --main-color: #25282a;
+    --colorController:#71acff;
+
     --widthCom: 699px;
+    --heihthCom: 322px;
+
     --heightbottomPanel: 15px;
+    --widthtextMem: 122px;
+
+    --widthController: 11px;
+
 }
 
 .flexSpBeCen {
@@ -17,8 +29,8 @@
 }
 
 .mainLayout {
-    width: 736px;
-    height: 432px;
+    width: var(--widthMainLayout);
+    height: var(--heightMainLayout);
 
     margin: 50px auto;
     margin-top: 0;
@@ -33,12 +45,12 @@
 
 .slider {
     width: var(--widthCom);
-    height: 322px;
+    height: var(--heihthCom);
 
     margin: 0px auto;
 
     border-radius: 10px;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 
     display: flex;
     position: relative;
@@ -59,21 +71,22 @@
 
 
 .textMem {
+    width: var(--widthtextMem);
     color: white;
 }
 
 .nav {
     width: 61px;
-    height: var(--heightbottomPanel);
+    /* height: var(--heightbottomPanel); */
 
     background-color: var(--main-color);
 }
 
 .controller {
-    width: 12px;
-    height: 12px;
+    width: var(--widthController);
+    height: var(--widthController);
 
-    border: 2px solid blue;
+    border: 2px solid var(--colorController);
 
     background-color: var(--main-color);
 
@@ -81,26 +94,42 @@
 }
 
 .controller:hover {
-    border: 2px solid white;
-    background-color: white;
+    border: 2px solid var(--colorController);
+    background-color: var(--colorController);
     cursor: pointer;
 }
 
 .memStl {
     width: var(--widthCom);
-    height: 322px;
+    height: var(--heihthCom);
     border-radius: 10px;
-
 }
 
 .contMem {
     width: var(--widthCom);
-    height: 322px;
+    height: var(--heihthCom);
     display: flex;
     align-items: center;
 }
 
-
-.sliderContainet{
+.sliderContainet {
     overflow: hidden;
+}
+
+.sliderFrameText {
+    width: var(--widthtextMem);
+    overflow: hidden;
+}
+
+.sliderTextMem {
+    width: 488px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    right: 0px;
+
+    transition: all ease 1s;
 }
