@@ -77,8 +77,6 @@
 
 .nav {
     width: 61px;
-    /* height: var(--heightbottomPanel); */
-
     background-color: var(--main-color);
 }
 
@@ -88,14 +86,14 @@
 
     border: 2px solid var(--colorController);
 
-    background-color: var(--main-color);
+    background-color: var(--colorController);
 
     border-radius: 10px;
 }
 
 .controller:hover {
-    border: 2px solid var(--colorController);
-    background-color: var(--colorController);
+    /* border: 2px solid white;
+    background-color: white; */
     cursor: pointer;
 }
 
